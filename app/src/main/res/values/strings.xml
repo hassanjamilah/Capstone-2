@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">A-Z Medicines</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drugs">Drugs</string>
+    <string name="interactions">Interactions</string>
+    <string name="favourite">Favourite</string>
+    <string name="appwidget_text" translatable="false">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="widget_search_string">Enter your search</string>
+    <string name="drug_name">Drug Name :</string>
+    <string name="drug_desc">Short Description:</string>
+    <string name="important_Info">important Information:</string>
+    <string name="before_taking">Befor taking this drug:</string>
+    <string name="overdose">Overdose:</string>
+    <string name="side_effects">Side Effects:</string>
+    <string name="dose">Dose:</string>
+    <string name="composition">Composition:</string>
+    <string name="app_name_paid">A-Z Medicines Paid</string>
+    <string name="app_name_free">A-Z Medicines Free Version</string>
+    <string name="danger_interaction">The Interaction is dangersous.</string>
+    <string name="app_logo_desc">Application Logo</string>
+    <string name="drug_image_desc">Drug Image</string>
+    <string name="drug_details_imageview_desc">Drug Image in the Drug Details</string>
+    <string name="search_interactions_desc">Search For the interactions</string>
+    <string name="search_drug_widget_desc">Search for the drug</string>
+    <string name="addtoFav_desc">Add The drug to favourites</string>
+    <string name="no_fav_drugs">No Favourite Drugs</string>
+    <string name="share_action_desc">Share</string>
+    <string name="widger_title">My Favourite Drugs</string>
+    <string name="no_fav">There is no favourite drugs.</string>
+</resources>

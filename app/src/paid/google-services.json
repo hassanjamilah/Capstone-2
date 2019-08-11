@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "592489008005",
+    "firebase_url": "https://paidversion-958a0.firebaseio.com",
+    "project_id": "paidversion-958a0",
+    "storage_bucket": "paidversion-958a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592489008005:android:7295b5c5541005c6",
+        "android_client_info": {
+          "package_name": "com.andalus.a_zmedicines.paid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592489008005-1t55fplu5vfniuvj1vj7b3tnbsgem7l5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4JqnxuJqZ_yrTeWeWjPzCLiJyZDcJv6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592489008005-1t55fplu5vfniuvj1vj7b3tnbsgem7l5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

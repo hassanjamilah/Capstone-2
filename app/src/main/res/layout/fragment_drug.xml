@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.andalus.a_zmedicines.Fragments.DrugFragment"
+
+    >
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/drugFragment_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/green_500"
+
+
+        app:searchIcon="@drawable/ic_search_green_24dp"
+        app:goIcon="@drawable/ic_search_green_24dp"
+
+
+        android:focusable="true"
+        android:nextFocusForward="@+id/mainActivity_recycerView"
+        android:nextFocusDown="@+id/mainActivity_recycerView"
+
+
+        android:foregroundTint="@android:color/black" />
+
+    <android.support.design.widget.AppBarLayout
+
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@android:color/white"
+
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                >
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/green_500"
+                    android:elevation="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo001"
+                    app:layout_collapseMode="pin"
+                    android:contentDescription="@string/app_logo_desc"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mainActivity_recycerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green_300"
+
+            android:paddingBottom="72dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:focusable="true"
+        android:nextFocusUp="@+id/drugFragment_searchView"
+        android:nextFocusForward="@+id/drugFragment_searchView"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

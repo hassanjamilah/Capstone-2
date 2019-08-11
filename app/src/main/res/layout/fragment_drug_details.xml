@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.andalus.a_zmedicines.Fragments.DrugDetailsFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@android:color/white"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+
+                >
+
+            </android.support.v7.widget.Toolbar>
+
+            <ImageView
+                android:id="@+id/drugDetailsFragment_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:background="@color/green_300"
+                android:contentDescription="@string/drug_details_imageview_desc"
+
+                />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/drugDetailsFragment_details_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/green_300"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/drugDetailsFragment_searchview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:focusable="true"
+                
+                android:nextFocusUp="@+id/drugDetailsFragment_fav_button"
+                app:searchIcon="@drawable/ic_search_green_24dp"
+                app:goIcon="@drawable/ic_search_green_24dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/drugDetailsFragment_details_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_blank_fragment"
+                android:textColor="@color/bluegray_800"
+                android:padding="8dp"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+    <ImageButton
+        android:id="@+id/drugDetailsFragment_fav_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="top|end"
+
+        android:src="@drawable/ic_star_border_black_24dp"
+
+        android:elevation="6dp"
+        android:contentDescription="@string/addtoFav_desc"
+
+        android:focusable="true"
+        android:nextFocusForward="@+id/drugDetailsFragment_searchview"
+        android:nextFocusDown="@+id/drugDetailsFragment_searchview"
+
+
+
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/drugDetailsFragment_share_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/green_a200"
+        android:clickable="true"
+
+        android:src="@drawable/ic_share_black_24dp"
+
+        app:elevation="6dp"
+        android:layout_gravity="bottom|end"
+        android:focusable="true"
+
+        android:contentDescription="@string/share_action_desc"
+        android:nextFocusUp="@+id/drugDetailsFragment_searchview"
+
+
+
+        />
+</android.support.design.widget.CoordinatorLayout>

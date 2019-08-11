@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/nav_screen"
+        android:title="@string/drugs"
+        android:icon="@drawable/ic_action_drugs_nav"
+
+
+        />
+    <item android:id="@+id/nav_interaactions"
+        android:title="@string/interactions"
+        android:icon="@drawable/ic_action_interactions_nav"
+        />
+    <item android:id="@+id/nav_favourates"
+        android:title="@string/favourite"
+        android:icon="@drawable/ic_action_favs_nav"
+        />
+
+
+</menu>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/interactionsFragment_share_fab"
+
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+
+
+            android:layout_gravity="end|bottom"
+            android:layout_margin="8dp"
+
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/green_a200"
+            android:elevation="6dp"
+            android:src="@drawable/ic_share_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/share_action_desc"
+            />
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/interactionsFragment_SecondDrug_SearchView"
+            >
+
+        <android.support.constraint.ConstraintLayout
+
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible"
+
+            tools:context="com.andalus.a_zmedicines.Fragments.InteractionsFragment">
+
+
+            <include
+                android:id="@+id/firstDrug"
+                layout="@layout/drug_list_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <include
+                android:id="@+id/secondDrug"
+                layout="@layout/drug_list_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstDrug" />
+
+            <ImageView
+                android:id="@+id/interactionsFragment_danger_ImageView"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/danger_interaction"
+                android:src="@drawable/red_circle"
+                app:layout_constraintBottom_toBottomOf="@+id/search_interactions"
+                app:layout_constraintStart_toEndOf="@+id/search_interactions"
+                app:layout_constraintTop_toTopOf="@+id/search_interactions"
+
+                />
+
+            <ImageButton
+                android:id="@+id/search_interactions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/search_interactions_desc"
+                android:src="@drawable/search_interactions_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/secondDrug" />
+
+            <TextView
+                android:id="@+id/interactionsFragment_InterActionDetails_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+
+                android:textColor="@color/green_a200"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/interactionsFragment_danger_ImageView" />
+
+
+        </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/interactionsFragment_search_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/green_300"
+            android:focusable="true"
+            android:nextFocusUp="@+id/interactionsFragment_SecondDrug_SearchView"
+            android:nextFocusDown="@+id/search_interactions"
+            android:nextFocusForward="@+id/interactionsFragment_SecondDrug_SearchView"
+            android:padding="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/interactionsFragment_SecondDrug_SearchView" />
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/interactionsFragment_SecondDrug_SearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:searchIcon="@drawable/ic_search_green_24dp"
+            app:goIcon="@drawable/ic_search_green_24dp"
+            android:background="@color/green_300"
+            android:focusable="true"
+            android:nextFocusUp="@+id/interactionsFragment_FirstDrug_SearchView"
+            android:nextFocusDown="@+id/interactionsFragment_search_RecyclerView"
+            android:nextFocusForward="@+id/interactionsFragment_search_RecyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/interactionsFragment_FirstDrug_SearchView">
+
+        </android.support.v7.widget.SearchView>
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/interactionsFragment_FirstDrug_SearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+
+            app:searchIcon="@drawable/ic_search_green_24dp"
+            app:goIcon="@drawable/ic_search_green_24dp"
+
+            android:background="@color/green_300"
+            android:focusable="true"
+            android:nextFocusUp="@+id/drugDetailsFragment_share_fab"
+            android:nextFocusDown="@+id/interactionsFragment_search_RecyclerView"
+            android:nextFocusForward="@+id/interactionsFragment_search_RecyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </android.support.v7.widget.SearchView>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

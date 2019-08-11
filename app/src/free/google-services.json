@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "863813283685",
+    "firebase_url": "https://azmed-678e4.firebaseio.com",
+    "project_id": "azmed-678e4",
+    "storage_bucket": "azmed-678e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863813283685:android:2940082595c57d61",
+        "android_client_info": {
+          "package_name": "com.andalus.a_zmedicines"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863813283685-0p7ll4tlindls9a7le3vjglbs585po9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeqli7Uhj2D-oLYDCbnBTDZwPfS0Xsu9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863813283685-0p7ll4tlindls9a7le3vjglbs585po9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863813283685:android:42072948b44fab8e",
+        "android_client_info": {
+          "package_name": "com.andalus.a_zmedicines.free"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863813283685-0p7ll4tlindls9a7le3vjglbs585po9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeqli7Uhj2D-oLYDCbnBTDZwPfS0Xsu9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863813283685-0p7ll4tlindls9a7le3vjglbs585po9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/widger_linearLayout"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/widger_title"
+        android:textSize="@dimen/widger_title_text_size"
+        android:gravity="center"
+        android:padding="8dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/green_700"
+        android:background="@color/green_500"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/my_drugs_widget_nofav_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_fav"
+
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/green_700"
+
+            android:fontFamily="sans-serif-black"
+            android:background="@color/green_300"
+            />
+        <ListView
+            android:id="@+id/my_drugs_widget_listview_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+        </ListView>
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>
